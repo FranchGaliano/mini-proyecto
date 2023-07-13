@@ -5,21 +5,20 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
+   
 }
 
 #contenedor-principal {
-    background-color: aquamarine;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;    
+    padding: 0px 80px;
 }
 
 #contenedor-cabecera {
     width: 100%;
     height: 100px;
-    margin: 13px;
-    padding: 0px 80px;
-    background-color: bisque;
+    /* padding: 0px 80px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,7 @@
     height: 55px;
     border: 1px #F2F2F2;
     text-align: center;
-    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10); */
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -39,11 +38,14 @@
 #input-city {
     width: 138px;
     border-radius: 16px 0 0 16px;
+    box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.10);
 }
 
 #input-guest {
     width: 104px;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.10);
 }
+
 
 .buscar-texto:focus {
     color: #333;
@@ -56,6 +58,7 @@
     width: 55px;
     border-radius: 0 16px 16px 0;
     color: #EB5757;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.10);
 }
 
 .material-symbols-outlined {
@@ -63,3 +66,114 @@
     position: relative;
     top: 5px;
 }
+
+#cabecera-resultados {
+    height: 100px;
+    width: 100%;
+    display: flex;    
+    /* padding: 0px 80px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecera-resultados > h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+#cabecera-resultados > p {
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#contenedor-cards {
+    height: auto;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-between; 
+    gap: 30px;
+}
+
+#card {
+    width: 374px;
+    height: 350px;
+}
+
+#card > img {
+    width: 374px;
+    height: 269px;
+    border-radius: 24px;
+}
+
+#card-detalle {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-host {
+    text-transform: uppercase;
+    width: 100px;
+    height: 28px;
+    border-radius: 12px;
+    border: 1px solid #4F4F4F;
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px;
+    margin-right: 11px;
+}
+
+#card-type-beds {
+    color: var(--gray-3, #828282);
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+#card-detalle #card-detalle-derecha .material-symbols-outlined {
+    width: 24px;
+    height: 24px;
+    color: #EB5757;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 40
+}
+
+#card-rating {
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+#card-title {
+    padding-top: 5px;
+    height: 30px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+footer a{
+    color: #828282;
+    font-weight: 700;
+    padding: 8px;
+}
+

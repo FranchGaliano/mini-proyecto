@@ -1,21 +1,17 @@
+import HeaderResults from "./HeaderResults"
+import Nav from "./Nav"
 
-const Header = () => {
+const Header = ({handleSumit, filtrado}) => {
   return (
-    <div id="contenedor-cabecera">
-        <div id="logo">
-            <img src="src/img/logo.png" alt="Logo Windbnb" />
+    <>
+        <div id="contenedor-cabecera">
+            <div id="logo">
+                <img src="src/img/logo.png" alt="Logo Windbnb" />
+            </div>
+            <Nav handleSumit={handleSumit} filtrado={filtrado} />
         </div>
-        <form action="" id="barraBuscar">
-            <input type="text" id="input-city" className="box-buscar buscar-texto" value="Add city" />
-            <input type="text" id="input-guest" className="box-buscar buscar-texto" value="Add guest" />
-            <button id="btn-buscar" className="box-buscar">
-                <span className="material-symbols-outlined">
-                    search
-                </span>
-            </button>
-
-        </form>
-    </div>
+        <HeaderResults />
+    </>
   )
 }
 
