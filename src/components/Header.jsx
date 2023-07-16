@@ -6,7 +6,7 @@ const Header = ({handleSumit, filtrado, total}) => {
     <>
         <div id="contenedor-cabecera">
             <div id="logo">
-                <img src="src/img/logo.png" alt="Logo Windbnb" />
+                <img src="/mini-proyecto/src/img/logo.png" alt="Logo Windbnb" />
             </div>
             <Nav handleSumit={handleSumit} filtrado={filtrado} />            
         </div>
