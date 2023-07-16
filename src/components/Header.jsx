@@ -6,7 +6,7 @@ const Header = ({handleSumit, filtrado, total}) => {
     <>
         <div id="contenedor-cabecera">
             <div id="logo">
-                <img src="https://franchgaliano.github.io/mini-proyecto/src/img/logo.png" alt="Logo Windbnb" />
+                <img src="https://windbnb-page.netlify.app/static/media/logo.beef9462.svg" alt="Logo Windbnb" />
             </div>
             <Nav handleSumit={handleSumit} filtrado={filtrado} />            
         </div>
