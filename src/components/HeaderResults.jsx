@@ -1,10 +1,10 @@
 
-const HeaderResults = () => {
+const HeaderResults = ({filtrado, total}) => {
  
   return (
     <div id="cabecera-resultados">
-        <h2>Stays in Finland </h2>
-        <p>12+ stays</p>
+        <h2>Stays in {filtrado} </h2>
+        <p>{total}+ stays </p>
     </div>
   )
 }

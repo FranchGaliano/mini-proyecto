@@ -1,7 +1,7 @@
 import HeaderResults from "./HeaderResults"
 import Nav from "./Nav"
 
-const Header = ({handleSumit, filtrado}) => {
+const Header = ({handleSumit, filtrado, total}) => {
   return (
     <>
         <div id="contenedor-cabecera">
@@ -10,7 +10,7 @@ const Header = ({handleSumit, filtrado}) => {
             </div>
             <Nav handleSumit={handleSumit} filtrado={filtrado} />
         </div>
-        <HeaderResults />
+        <HeaderResults filtrado={filtrado} total={total} />
     </>
   )
 }

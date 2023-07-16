@@ -6,8 +6,6 @@ function App() {
   // La variable data es la que va a almacenar los datos de "stays.json" y setData nos ayudará a guardar esos datos en esa variable. Es necesario que inicialicemos esa variable como un array vacío para evitar errores.
   const [data, setData] = useState([]);
 
-
-
   // Función para traer los datos de "stays.json".
   const getData = async () => {
     // Esta sentencia try-catch sirve para manejar los errores que se podrían generar al importar los datos de "stays.json".
@@ -37,18 +35,17 @@ function App() {
 
     let arr = data.filter((alojamiento) => {
       let ciudad = alojamiento.city.toLowerCase(); // recibo un string
-
       return ciudad.includes(busqueda);
     });
 
     setFiltrado(arr);
     console.log(arr);
   };
-
+ console.log(filtrado[0]);
   return (
     <>
       <div id="contenedor-principal">    
-        <Header handleSumit={handleSumit}  />
+        <Header handleSumit={handleSumit} filtrado={ ( filtrado[0] === undefined ? "a selected country" : filtrado[0].country)} total={filtrado.length} />
         <div id="contenedor-cards">
           { filtrado.map((hosting,i) => <Card key={i} hosting={hosting} />) } 
         </div>
