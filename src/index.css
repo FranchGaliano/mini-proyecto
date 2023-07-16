@@ -71,7 +71,6 @@
     height: 100px;
     width: 100%;
     display: flex;    
-    /* padding: 0px 80px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -176,4 +175,64 @@ footer a{
     font-weight: 700;
     padding: 8px;
 }
+
+@media (max-width: 1352px) {
+    #card {
+        width: 350px;
+    }
+
+    #card > img {
+        width: 350px;
+    }    
+}
+@media (max-width: 1271px) {
+    #card {
+        width: 340px;
+    }
+    
+    #card > img {
+        width: 340px;
+    }  
+}
+
+@media (max-width: 1240px) {
+    #contenedor-cards {
+        justify-content: center;
+    }
+    #card {
+        width: 374px;
+    }
+    #card > img {
+        width: 374px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contenedor-cabecera {
+        height: 160px;
+        flex-direction: column;
+        padding: 19px 13px;
+    }
+    #logo {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 485px) {
+    #contenedor-principal {
+        padding: 0px 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    #card {
+        width: 350px;
+    }
+    
+    #card > img {
+        width: 350px;
+        height: 239px;
+    }
+}
+
 
